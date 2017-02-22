@@ -25,7 +25,7 @@ articleView.handleAuthorFilter = function() {
             those articles that match the value, and then fade them in.
         */
       $('article').hide();
-      $('article[data-author="' + $(this).val + '"]').fadeIn();
+      $('article[data-author="' + $(this).val() + '"]').fadeIn();
     } else {
     /* Otherwise, we should:
         1. Show all the articles except the template */
